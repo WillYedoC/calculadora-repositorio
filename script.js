@@ -139,7 +139,6 @@ numberButtons.forEach((button) => {
 operationButtons.forEach((button) => {
     button.addEventListener("click", () => {
         let op = button.textContent;
-        // Convertir símbolos visuales a operadores reales
         if (op === "×") op = "*";
         if (op === "÷") op = "/";
 
