@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Proyecto Calculadora</title>
 </head>
+
 <body>
     <div class="calculator">
         <h1 class="calculator__title">Proyecto Calculadora</h1>
         <div class="calculator__display">
-            <div class="calculator__display--input">4x7</div>
-            <div class="calculator__display--output">28</div>
+            <div class="calculator__display--input"></div>
+            <div class="calculator__display--output"></div>
         </div>
         <div class="calculator__buttons">
             <button class="calculator__button calculator__button--clear">AC</button>
@@ -42,6 +44,15 @@
             <button class="calculator__button calculator__button--equals">=</button>
         </div>
     </div>
+    <button class="toggle_history">
+        Ver Historial
+    </button>
+    <div class="history">
+        <h1 class="history__title">Historial de Calculos</h1>
+        <div class="history__panel"></div>
+        <button class="history__clear">Borrar Historial</button>
+    </div>
 </body>
 <script src="./script.js"></script>
+
 </html>

@@ -98,3 +98,61 @@ body {
 .calculator__buttons :nth-child(16) {
   grid-column: span 2;
 }
+.history{
+  background-color: var(--color-bg-panel);
+  width: 100%;
+  max-width: 450px;
+  margin-left: 15px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  display: none; /* oculto por defecto */
+}
+.history.open{
+  display: block;
+}
+.history__title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.history__panel{
+  max-height: 220px;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.06);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+  color: var(--color-text-primary);
+}
+.history__item{
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.history__item:hover{
+  background: rgba(0,0,0,0.04);
+}
+.history__empty{
+  padding: 10px;
+  color: rgba(219,200,201,0.9);
+}
+.history__clear{
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid rgba(219,200,201,0.6);
+  color: var(--color-text-primary);
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.toggle_history{
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid rgba(219,200,201,0.6);
+  color: var(--color-text-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
