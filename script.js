@@ -121,16 +121,16 @@ function compute() {
             break;
         case "*":
             computation = prev * current;
-            history.push(`${prev} * ${current} = ${prev * current}` );
+            history.push(`${prev} x ${current} = ${prev * current}` );
             break;
         case "/":
             if (current === 0) {
-                alert("No se puede dividir por cero");
-                clear();
+                currentOperand = "Error";
+                updateDisplay();
                 return;
             }
             computation = prev / current;
-            history.push(`${prev} / ${current} = ${prev / current}`);
+            history.push(`${prev} ÷ ${current} = ${prev / current}`);
             break;
         default:
             return;
